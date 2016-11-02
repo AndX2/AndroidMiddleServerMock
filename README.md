@@ -23,10 +23,10 @@ For uploaded goods, images (for goods) you user should up role to "user". It's e
 
 ###GET goods
 http://109.234.34.97:4000/api/goods/
-Note: thit pagination response. Params: page, pageSize.
+Note: this pagination response. Params: page, pageSize.
 Sample request: http://109.234.34.97:4000/api/goods/?page=2&pageSize=20
 If params is not defined => default value http://109.234.34.97:4000/api/goods/?page=1&pageSize=30
-You can GET only one good. http://109.234.34.97:4000/api/goods/{id}
+You can GET too one good only. http://109.234.34.97:4000/api/goods/{id}
 
 ###Add good
 POST http://109.234.34.97:4000/api/goods/ JSON model Good. Fields "title", "description", "cost", "ownerId" must be valid! Header "token" is contains true token user with role=user (after registration).
